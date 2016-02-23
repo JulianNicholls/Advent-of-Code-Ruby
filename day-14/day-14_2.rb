@@ -25,10 +25,7 @@ end
     distance += left < this[:run_time] ? left * this[:speed] : this[:run_time] * this[:speed]
     this[:distance] = distance
     max = distance if distance > max
-    # puts "#{key}: #{this}"
   end
-
-  # puts "#{max}\n"
 
   speeds.keys.each do |key|
     speeds[key][:points] += 1 if speeds[key][:distance] == max
